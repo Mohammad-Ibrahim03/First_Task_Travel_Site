@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Now</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Destination</a></li>
+                <li> <a href="#">Travel Information</a></li>
+                <li> <a href="booking.html">Book Now</a></li>
+            </ul>
+        </nav>
+        <aside>
+
+        </aside>
+    </header>
+    <main>
+        <section>
+            <form action="/" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personality</legend>
+                    <br>
+                    <label for="full_name">Full Name : </label>
+                    <input type="text" id="full_name" name="full_name">
+                    <br>
+                    <label for="Email_Address">Email Address : </label>
+                    <input type="email" id="Email_Address" name="Email_Address">
+                    <br>
+                    <label for="Password">Password</label>
+                    <input type="password" name="Password" id="Password">
+                    <br>
+                    <label for="Phone_number">Phone Number</label>
+                    <input type="tel" name="Phone_number" id="Phone_number">
+                    <br>
+                    <label for="DOB">Date Of Birth</label>
+                    <input type="date" name="DOB" id="DOB">
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Travel Details</legend>
+                    <label for="Departure_City">Departure City</label>
+                    <input type="text" name="Departure_City" id="Departure_City">
+                    <br>
+                    <select name="Destination" id="Destination">
+                        <optgroup>
+                            <option value="Europe">Europe</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Middle_East">Middle East</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="Travel_Date">Travel Date</label>
+                    <input type="date" name="Travel_Date" id="Travel_Date">
+                    <br>
+                    <label for="Number_Of_Travelers">Number Of Travelers</label>
+                    <input type="number" name="Number_Of_Travelers" id="Number_Of_Travelers">
+                    <br>
+                    <label for="Travel_Class">Travel Class</label>
+                    <br>
+                    <input type="radio" id="Economy" name="Travel_Class" value="Economy">
+                    <label for="Economy">Economy</label><br>
+                    <input type="radio" id="Business" name="Travel_Class" value="Business">
+                    <label for="Business">Business</label><br>
+                    <input type="radio" id="First_Class" name="Travel_Class" value="First_Class">
+                    <label for="First_Class">First Class</label>
+                    <br>
+                    <label for="Additional_Services">Additional Services</label>
+                    <br>
+                    <input type="checkbox" id="Airport_Transfer" name="Airport_Transfer" value="Airport_Transfer">
+                    <label for="Airport_Transfer">Airport Transfer</label><br>
+                    <input type="checkbox" id="Hotel_Reservation" name="Hotel_Reservation" value="Hotel_Reservation">
+                    <label for="Hotel_Reservation">Hotel Reservation</label><br>
+                    <input type="checkbox" id="Travel_Insurance" name="Travel_Insurance" value="Travel_Insurance">
+                    <label for="Travel_Insurance">Travel Insurance</label><br>
+                    <input type="checkbox" id="Guided_Tour" name="Guided_Tour" value="Guided_Tour">
+                    <label for="Guided_Tour">Guided Tour</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Advance Features</legend>
+                    <label for="Special_Requests">Special Requests</label>
+                    <textarea name="Special_Requests" id="Special_Requests" maxlength="100" placeholder="Hi"></textarea>
+                    <br>
+                    <input type="file" name="Special_Requests" id="Special_Requests_File" required multiple>
+                    <br>
+                    <label for="package">Preferred Package:</label>
+                    <input type="text" id="package" name="package" list="trip-options" placeholder="Search a trip..."
+                        required>
+                    <datalist id="trip-options">
+                        <option value="Bali Relaxation Trip">
+                        <option value="Cairo & Luxor Historic Tour">
+                        <option value="Kenya Safari Adventure">
+                        <option value="Swiss Alps Ski Trip">
+                    </datalist>
+                    <br>
+                    <label for="bookingRef">Booking Reference:</label>
+                    <input type="text" id="bookingRef" name="bookingRef" value="REF-2026-X89" readonly>
+                    <br>
+                    <label for="promo">Promotional Discount:</label>
+                    <input type="text" id="promo" name="promo" value="15% OFF (Expired)" disabled>
+                    <br>
+                    <label for="travelers">Travelers (1-10):</label>
+                    <input type="number" id="travelers" name="travelers" min="1" max="10" value="1" required>
+                    <br>
+                    <label for="docs">Upload Passports:</label>
+                    <input type="file" id="docs" name="docs" multiple>
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear/Reset">
+                    <br>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
